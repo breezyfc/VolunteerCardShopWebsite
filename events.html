@@ -1,153 +1,90 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 <title>Events</title>
-
-<link rel="stylesheet" href="css/styles.css">
-
-<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
-
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header>
-
-<div class="nav">
-
-<img src="images/logo.png" class="logo">
+<h1>Trading Card Shop</h1>
+</header>
 
 <nav>
-<a href="index.html">Home</a>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="store.html">Store</a></li>
+<li><a href="sell-trade.html">Sell/Trade</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="container">
+
+<div class="section">
+<h2>Upcoming Events</h2>
+
+<table class="calendar">
+<tr>
+<th>Date</th>
+<th>Event</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>March 15</td>
+<td>Pokemon Trade Night</td>
+<td>6PM - Trade cards with the community</td>
+</tr>
+
+<tr>
+<td>March 22</td>
+<td>Sports Card Break</td>
+<td>Live box break</td>
+</tr>
+
+<tr>
+<td>March 29</td>
+<td>TCG Tournament</td>
+<td>Entry $10</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<footer>
+<div class="footer-container">
+
+<div class="footer-column">
+<h3>Shop</h3>
 <a href="store.html">Store</a>
 <a href="sell-trade.html">Sell / Trade</a>
 <a href="events.html">Events</a>
-<a href="faq.html">FAQ</a>
+</div>
+
+<div class="footer-column">
+<h3>Company</h3>
 <a href="about.html">About</a>
+<a href="faq.html">FAQ</a>
 <a href="contact.html">Contact</a>
-</nav>
-
 </div>
 
-</header>
-
-<section class="page">
-
-<h1>Upcoming Events</h1>
-
-<div id="calendar"></div>
-
-</section>
-
-<footer class="footer">
-
-<div class="footer-grid">
-
-<div>
-<h3>Card Shop</h3>
-<p>Your local destination for sports cards, Pokémon, and collectibles.</p>
-</div>
-
-<div>
+<div class="footer-column">
 <h3>Follow Us</h3>
-
-<a href="#">Instagram</a><br>
-<a href="#">Facebook</a><br>
-<a href="#">TikTok</a><br>
+<a href="#">TikTok</a>
+<a href="#">Instagram</a>
 <a href="#">Whatnot</a>
-
-</div>
-
-<div>
-<h3>Visit</h3>
-<p>Your Address</p>
-<p>(000) 000-0000</p>
+<a href="#">Facebook</a>
 </div>
 
 </div>
-
-</footer>
-
-<script>
-
-document.addEventListener('DOMContentLoaded', function () {
-
-var calendarEl = document.getElementById('calendar');
-
-var calendar = new FullCalendar.Calendar(calendarEl, {
-
-initialView: 'dayGridMonth',
-
-events: [
-
-{
-title: 'Pokémon League',
-start: '2026-03-12'
-},
-
-{
-title: 'Trade Night',
-start: '2026-03-18'
-},
-
-{
-title: 'Sports Card Break',
-start: '2026-03-22'
-}
-
-]
-
-});
-
-calendar.render();
-
-});
-
-</script>
-
-<footer class="footer">
-
-<div class="footer-grid">
-
-<div>
-
-<h3>Local Card Shop</h3>
-
-<p>
-Your destination for sports cards, Pokémon, and collectibles.
-Buy, sell, trade, and connect with the hobby community.
-</p>
-
-</div>
-
-<div>
-
-<h3>Social Media</h3>
-
-<a href="#">Instagram</a><br>
-<a href="#">Facebook</a><br>
-<a href="#">TikTok</a><br>
-<a href="#">Whatnot</a>
-
-</div>
-
-<div>
-
-<h3>Contact</h3>
-
-<p>Email: your@email.com</p>
-<p>Phone: (000) 000-0000</p>
-
-</div>
-
-</div>
-
-<p class="copyright">© 2026 Local Card Shop</p>
-
 </footer>
 
 </body>
