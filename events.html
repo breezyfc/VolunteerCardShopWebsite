@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +6,10 @@
 <title>Events</title>
 
 <link rel="stylesheet" href="css/styles.css">
+
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 
 </head>
 
@@ -32,24 +35,120 @@
 
 </header>
 
-
 <section class="page">
 
 <h1>Upcoming Events</h1>
 
-<ul class="events">
-
-<li>Friday Night Pokémon League</li>
-
-<li>Saturday Trade Night</li>
-
-<li>Monthly Sports Card Trade Show</li>
-
-</ul>
+<div id="calendar"></div>
 
 </section>
 
+<footer class="footer">
+
+<div class="footer-grid">
+
+<div>
+<h3>Card Shop</h3>
+<p>Your local destination for sports cards, Pokémon, and collectibles.</p>
+</div>
+
+<div>
+<h3>Follow Us</h3>
+
+<a href="#">Instagram</a><br>
+<a href="#">Facebook</a><br>
+<a href="#">TikTok</a><br>
+<a href="#">Whatnot</a>
+
+</div>
+
+<div>
+<h3>Visit</h3>
+<p>Your Address</p>
+<p>(000) 000-0000</p>
+</div>
+
+</div>
+
+</footer>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+
+var calendarEl = document.getElementById('calendar');
+
+var calendar = new FullCalendar.Calendar(calendarEl, {
+
+initialView: 'dayGridMonth',
+
+events: [
+
+{
+title: 'Pokémon League',
+start: '2026-03-12'
+},
+
+{
+title: 'Trade Night',
+start: '2026-03-18'
+},
+
+{
+title: 'Sports Card Break',
+start: '2026-03-22'
+}
+
+]
+
+});
+
+calendar.render();
+
+});
+
+</script>
+
+<footer class="footer">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Local Card Shop</h3>
+
+<p>
+Your destination for sports cards, Pokémon, and collectibles.
+Buy, sell, trade, and connect with the hobby community.
+</p>
+
+</div>
+
+<div>
+
+<h3>Social Media</h3>
+
+<a href="#">Instagram</a><br>
+<a href="#">Facebook</a><br>
+<a href="#">TikTok</a><br>
+<a href="#">Whatnot</a>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>Email: your@email.com</p>
+<p>Phone: (000) 000-0000</p>
+
+</div>
+
+</div>
+
+<p class="copyright">© 2026 Local Card Shop</p>
+
+</footer>
+
 </body>
-
 </html>
-
